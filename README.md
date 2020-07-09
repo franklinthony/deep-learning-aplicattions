@@ -6,20 +6,20 @@
   Deep Learning Aplicattions
 </h1>
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/franklinthony/recognize-me">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/franklinthony/deep-learning-aplicattions">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/franklinthony/recognize-me">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/franklinthony/deep-learning-aplicattions">
   
-  <a href="https://github.com/franklinthony/recognize-me/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/franklinthony/recognize-me">
+  <a href="https://github.com/franklinthony/deep-learning-aplicattions/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/franklinthony/deep-learning-aplicattions">
   </a>
 
-  <a href="https://github.com/franklinthony/recognize-me/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/franklinthony/recognize-me">
+  <a href="https://github.com/franklinthony/deep-learning-aplicattions/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/franklinthony/deep-learning-aplicattions">
   </a>
   
   <a href="https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab"/>
 </a>
 </p>
 

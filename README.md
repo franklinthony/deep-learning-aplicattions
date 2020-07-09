@@ -33,7 +33,7 @@
 
 ## :rocket: Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+Essas aplicações foram desenvolvidas com as seguintes tecnologias:
 
 - [Keras](https://keras.io/)
 - [TensorFlow](https://www.tensorflow.org/)

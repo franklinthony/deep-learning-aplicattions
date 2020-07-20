@@ -28,7 +28,6 @@ classificador.compile(optimizer = 'adam', loss = 'binary_crossentropy',
 
 classificador.summary()
 
-# 'rescale' - normalizacao
 gerador_treinamento = ImageDataGenerator(rescale = 1./255,
                                          rotation_range = 7,
                                          horizontal_flip = True,
@@ -48,22 +47,17 @@ base_teste = gerador_teste.flow_from_directory('dataset_personagens/test_set',
                                                batch_size = 32,
                                                class_mode = 'binary')
 
-# se o poder de processamento for muito elevado
-# pode-se colocar toda a base de dados - 4000, no caso
 classificador.fit_generator(base_treinamento, steps_per_epoch = 196,
                             epochs = 5, validation_data = base_teste,
                             validation_steps = 73)
 
-# treinamento com apenas uma imagem
 imagem_teste = image.load_img('dataset_personagens/test_set/bart/bart7.bmp',
                               target_size = (64, 64))
 imagem_teste = image.img_to_array(imagem_teste)
 imagem_teste /= 255
-# numero de canais e quant. de imagens
 imagem_teste = np.expand_dims(imagem_teste, axis = 0)
 previsao = classificador.predict(imagem_teste)
-# 'true' ou 'false'
+
 previsao = (previsao > 0.5)
 previsao = 'Bart' if previsao == False else 'Homer'
-# quais as classes separadas?
 base_treinamento.class_indices

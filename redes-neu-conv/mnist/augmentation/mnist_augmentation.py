@@ -26,16 +26,12 @@ classificador.add(Dense(units = 10, activation = 'softmax'))
 classificador.compile(loss = 'categorical_crossentropy', optimizer = 'adam',
                       metrics = ['accuracy'])
 
-# augmentation - aumento para treinamento e teste
-# 'rotation_range' - rotacao em grau
-# 'shear_range - alteracao no valor dos pixels
 gerador_treinamento = ImageDataGenerator(rotation_range = 7,
                                          horizontal_flip = True,
                                          shear_range = 0.2,
                                          height_shift_range = 0.07,
                                          zoom_range = 0.2)
 
-# deixando em branco, ele nao vai fazer o aumento
 gerador_teste = ImageDataGenerator()
 
 base_treinamento = gerador_treinamento.flow(previsores_treinamento,

@@ -18,10 +18,7 @@ def criarRede():
     classificador = Sequential()
     classificador.add(Dense(units = 4, activation = 'relu', input_dim = 4))
     classificador.add(Dense(units = 4, activation = 'relu'))
-    # 'softmax' para prob com mais de duas classes
-    # gera uma probabilidade para cada classe
     classificador.add(Dense(units = 3, activation = 'softmax'))
-    # 'categorical_crossentropy' - prob com mais de duas classes
     classificador.compile(optimizer = 'adam', loss = 'categorical_crossentropy',
                           metrics = ['categorical_accuracy'])
     return classificador

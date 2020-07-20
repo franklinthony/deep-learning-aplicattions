@@ -7,12 +7,10 @@ arquivo = open('classificador_breast.json', 'r')
 estrutura_rede = arquivo.read()
 arquivo.close()
 
-# definindo o classificador
 classificador = model_from_json(estrutura_rede)
-# carregando os pesos
+
 classificador.load_weights('classificador_breast.h5')
 
-# novo registro para análise (em forma de linha)
 novo = np.array([[15.80, 8.34, 118, 900, 0.10,
                   0.26, 0.08, 0.134, 0.178, 0.20,
                   0.05, 1098, 0.87, 4500, 145.2,
@@ -23,7 +21,6 @@ novo = np.array([[15.80, 8.34, 118, 900, 0.10,
 previsao = classificador.predict(novo)
 previsao = (previsao > 0.5)
 
-# avaliando com base de testes
 previsores = pd.read_csv('entradas_breast.csv')
 classe = pd.read_csv('saidas_breast.csv')
 
